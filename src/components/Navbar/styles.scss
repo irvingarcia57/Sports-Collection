@@ -1,0 +1,45 @@
+$background-color: #0b132b; 
+$font: 'Alata', sans-serif;
+
+.navbar1{
+    background: #12212B;
+    //box-shadow: 0 4px 8px 2px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 35px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+
+}
+.navbar2 {
+    background: #182935; 
+    height: 55px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+
+}
+.nav-item{
+    display: flex; 
+    flex-direction: row;
+    list-style: none; 
+   
+    
+}
+.nav-links{
+    font-family: $font;
+    color: white; 
+    text-decoration: none; 
+    margin: 20px;
+    text-transform: capitalize;
+}
+.nav-links2{
+    font-family: $font;
+    font-size: 30px;
+    color: white; 
+    text-decoration: none; 
+    margin: 20px;
+    text-transform: capitalize;
+    
+}
+
+
