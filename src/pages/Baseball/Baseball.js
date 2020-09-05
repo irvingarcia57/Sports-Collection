@@ -1,5 +1,12 @@
 import React from 'react';
-import { Navbar1, Navbar2 } from '../../components/Navbar/navbar';
+import '../../components/styles.scss';
+import { Route, Switch, Link, BrowserRouter } from 'react-router-dom';
+import { BBItems } from '../../components/MenuItems';
+
+import BsBHome from './Baseball_Home';
+import BsBMatches from './Baseball_Matches';
+import BsBTeams from './Baseball_Teams';
+
 
 class Baseball extends React.Component {
     constructor(props) {
@@ -9,13 +16,24 @@ class Baseball extends React.Component {
     render() {
         return (
             <div>
-
-                <h1>this is the baseball tab</h1>
-                <h1>Hello</h1>
-
-
-
-
+                <BrowserRouter>
+                    <nav className='navbar2'>
+                        <ul className='nav-item'>
+                            {BBItems.map(({ name, cName2, id }) => {
+                                return (
+                                    <li key={id}>
+                                        <Link to={`/baseball/${id}`} className={cName2}>{name}</Link>
+                                    </li>
+                                );
+                            })}
+                        </ul>
+                    </nav>
+                    <Switch>
+                        <Route exact path={`/baseball/home`} component={BsBHome} />
+                        <Route path={`/baseball/teams`} component={BsBTeams} />
+                        <Route path={`/baseball/matches`} component={BsBMatches} />
+                    </Switch>
+                </BrowserRouter>
             </div>
         );
     }

@@ -1,69 +1,65 @@
 export const MenuItems = [
     {
-        title: 'home',
+        name: 'home',
         path: '/',
         component: 'Home',
         cName: 'nav-links'
     },
     {
-        title: 'football',
+        name: 'football',
         path: '/football',
         component: 'Football',
         cName: 'nav-links'
     },
+
     {
-        title: 'soccer',
-        path: '/soccer',
-        component: 'Soccer',
-        cName: 'nav-links'
-    },
-    {
-        title: 'basketball',
+        name: 'basketball',
         path: '/basketball',
         component: 'Basketball',
         cName: 'nav-links'
     },
     {
-        title: 'baseball',
+        name: 'baseball',
         path: '/baseball',
         component: 'Baseball',
         cName: 'nav-links'
     },
     {
-        title: 'tennis',
-        path: '/tennis',
-        component: 'Tennis',
+        name: 'hockey',
+        path: '/hockey',
+        component: 'Hockey',
         cName: 'nav-links'
     },
     {
-        title: 'UFC',
-        path: '/ufc',
-        component: 'Ufc',
+        name: 'soccer',
+        path: '/soccer',
+        component: 'Soccer',
         cName: 'nav-links'
     },
+
 
 ];
 
-export const NavbarTwoItems = [
 
+export const BBItems = [
     {
-        title: 'home',
-        component: '#',
+        name: 'home',
+        id: 'home',
         cName2: 'nav-links2'
     },
     {
-        title: 'matches',
-        component: '#',
+        name: 'matches',
+        id: 'matches',
         cName2: 'nav-links2'
     },
     {
-        title: 'teams',
-        component: '#',
+        name: 'teams',
+        id: 'teams',
         cName2: 'nav-links2'
     },
     {
-        title: 'bets',
-        component: '#',
+        name: 'bets',
+        id: 'bets',
         cName2: 'nav-links2'
     }
-]; 
+]

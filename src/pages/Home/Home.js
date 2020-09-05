@@ -1,5 +1,5 @@
 import React from 'react';
-import { Navbar1, Navbar2 } from '../../components/Navbar/navbar';
+
 
 class Home extends React.Component {
     constructor(props) {
@@ -9,9 +9,8 @@ class Home extends React.Component {
     render() {
         return (
             <div>
-                <Navbar2 />
-                <h1>this is the home tab</h1>
-                <h1>Hello</h1>
+
+                <h1>this is home </h1>
 
 
 
